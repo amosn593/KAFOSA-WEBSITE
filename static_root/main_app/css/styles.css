@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cccccc !important;
+}
+
+.external_container {
+  background-color: #cccccc !important;
+  width: 100%;
+  /* min-height: 100vh !important; */
+  position: relative;
+}
+
+.main_content {
+  background-color: #fff;
+  width: 80%;
+  margin-top: 30px;
+  margin-left: 10%;
+  min-height: 90vh;
+  position: absolute;
+}
+
+.mylogo {
+  width: 170px;
+  height: 120px;
+}
+
+.mycarosel {
+  height: 415px !important;
+}
+
+.mynavbar {
+  background-color: #1d50a4 !important;
+  line-height: 48px !important;
+}
+
+.navhover:hover {
+  background-color: #27aae1 !important;
+}
+
+.nav-link {
+  font-size: 17px !important;
+  font-weight: 700px !important;
+  color: #fff !important;
+}
+
+.mysidebar {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.mainbar {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.mysidebarbg {
+  background-color: #eceaeb !important;
+  padding: 12px;
+  border-radius: 8px;
+  color: #263d61;
+}
+
+.mysidelink {
+  text-decoration: none;
+  font-size: 13px !important;
+  line-height: 14px !important;
+}
+
+.myfooter {
+  background-color: #1d50a4 !important;
+  padding: 30px;
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 12px !important;
+}
+
+.mytopimage {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.corevalues > li {
+  list-style-type: none;
+}
+
+.bi {
+  font-size: 30px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #1d50a4;
+}
+
+p {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slogan {
+  font-family: "Style Script", cursive;
+}
+
+.fosa {
+  font-family: "Barlow", sans-serif;
+}
+
+.mymap {
+  width: 400px;
+  height: 350px;
+}
+
+/* Media queries */
+@media screen and (max-width: 480px) {
+  .main_content {
+    background-color: #fff;
+    width: 100%;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    min-height: 100vh;
+    position: absolute;
+  }
+  .mylogo {
+    width: 100px;
+    height: 80px;
+  }
+
+  .mycarosel {
+    height: 170px !important;
+  }
+  .mymap {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .row {
+        background-color: rgb(53, 53, 212);
+      }
+
+      .header {
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+      }
+      .main {
+        padding: 20px;
+      }
+      .detail {
+        text-align: center;
+        padding: 15px;
+        margin: 10px;
+      }
+      .footer {
+        background-color: rgb(53, 53, 212);
+        padding: 40px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <h2 class="header">KAFOSA Workshop Registration</h2>
+      <p class="header">ICT IN ADVANCING FINANCIAL INCLUSION FOR SACCOS</p>
+    </div>
+    <div class="main">
+      <h5 class="detail">NAME: {{name}}</h5>
+      <h5 class="detail">ORGANIZATION: {{organization}}</h5>
+      <h5 class="detail">PHONE: {{phone}}</h5>
+      <h5 class="detail">EMAIL: {{email}}</h5>
+    </div>
+    <div class="footer">
+      <p class="header">Our Shelter | KAFOSA</p>
+      <p class="header">info@kafosa.or.ke</p>
+    </div>
+  </body>
+</html>

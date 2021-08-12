@@ -1,0 +1,67 @@
+{% extends 'main_app/base.html' %} {% load static %} {% block content %}
+<div class="container">
+  <!-- Image top -->
+  <div class="container">
+    <!-- Top Image -->
+    <img
+      src="{% static 'main_app/images/top_home.jpg' %}"
+      alt=""
+      class="mytopimage"
+    />
+  </div>
+
+  <!-- Introduction -->
+  <div class="container my-3">
+    <p>
+      Kenya Association of Front Office Activity(KAFOSA) formerly known as Coast
+      Association of front office services activities (CAFOSA) was registered in
+      February 2010 to provide lobby and advocacy to deposit taking Sacco’s in
+      the Coast region.
+    </p>
+    <p>
+      Exactly two years after realizing this dream it became necessary to widen
+      our scope to reach out to more Sacco’s hence the registration of the
+      Kenyan chapter in February 2012, mainly to create an enabling environment
+      for Sacco’s with Fosas in their areas of operation and to play a similar
+      role as is the case with KBA – Kenya Bankers Association and AMFI
+      –Association of Micro Finance Institutions.
+    </p>
+    <p>
+      Due to emerging challenges brought about as a result of the regulators
+      compliance requirements, which some of the system vendors took advantage
+      of to exploit our members and potential members, meeting the minimum
+      Capital requirement amongst many others challenges.
+    </p>
+  </div>
+
+  <!-- Mission -->
+  <div class="container my-3">
+    <h5 class="text-center">Our Mission</h5>
+    <p>
+      To foster strong links amongst FOSA operators by offering protection to
+      the membership, sharing information with view to enhance product
+      development for our customers.
+    </p>
+  </div>
+
+  <!-- Vision -->
+  <div class="container my-3">
+    <h5 class="text-center">Vision</h5>
+    <p>
+      To be the most reliable most informative association for FOSAs in the
+      Coast Province.
+    </p>
+  </div>
+
+  <!-- Values -->
+  <div class="container my-3">
+    <h5 class="text-center">Core Values</h5>
+    <ul class="text-center corevalues">
+      <li>Intergrity</li>
+      <li>Efficiency</li>
+      <li>Awareness</li>
+      <li>Progress</li>
+    </ul>
+  </div>
+</div>
+{% endblock content %}
