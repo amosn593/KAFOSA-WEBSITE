@@ -22,9 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 
-
-
-
 ROOT_URLCONF = 'kafosa.urls'
 
 TEMPLATES = [
@@ -88,7 +85,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 
 # Default primary key field type
