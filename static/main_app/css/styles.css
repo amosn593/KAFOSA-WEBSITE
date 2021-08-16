@@ -122,6 +122,8 @@ li {
 
 .fosa {
   font-family: "Barlow", sans-serif;
+  /* color: #ffff01; */
+  font-weight: 700;
 }
 
 .mymap {

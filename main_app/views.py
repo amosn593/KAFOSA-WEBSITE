@@ -66,11 +66,11 @@ def contact_form(request):
             messages.success(
                 request, f"Workshop Registration sent successfully.")
 
-            return redirect('home')
+            return redirect('turtlebay')
         except:
             messages.error(
                 request, f"Something went wrong, kindly try again!!!")
-            return redirect('home')
+            return redirect('turtlebay')
 
     else:
         return redirect('home')
