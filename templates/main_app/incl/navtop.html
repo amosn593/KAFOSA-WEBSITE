@@ -1,0 +1,118 @@
+{% load static %}
+<div class="advert">
+  <h5 class="text-center py-2 advert-h5">
+    KAFOSA Workshop On 15TH - 18TH September, 2021, TurtleBay Hotel, Malindi
+    <a href="{% url 'turtlebay' %}" class="mx-2">Register Here</a>
+  </h5>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mynavbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home' %}">
+      <img
+        src="{% static 'main_app/images/logo.png' %}"
+        alt="KAFOSA LOGO"
+        class="d-inline-block align-text-top mylogo"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item navhover">
+          <a class="nav-link mx-4" aria-current="page" href="{% url 'home' %}"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle navhover mx-4"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            About Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="{% url 'objectives' %}"
+                >Objectives</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">By Laws</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle navhover mx-4"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Membership
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="{% url 'qualification' %}"
+                >Membership Qualifications</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'application'%}"
+                >Membership Application</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'memmberlist'%}"
+                >Our Members</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item navhover mx-4">
+          <a class="nav-link" href="{% url 'contact_us' %}">Contacts</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <a
+          href="https://www.linkedin.com/in/kenya-association-of-fosas-kafosa-a861b821b/"
+          target="”_blank”"
+          class="mx-1 top-icons"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCiLNsorLevkYsUC7dQJwJ-w"
+          target="”_blank”"
+          class="mx-1 top-icons"
+          ><i class="bi bi-youtube"></i
+        ></a>
+        <a
+          href="https://mobile.twitter.com/_Kafosa"
+          target="”_blank”"
+          class="mx-1 top-icons"
+          ><i class="bi bi-twitter"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100072003075133"
+          target="”_blank”"
+          class="mx-1 top-icons"
+          ><i class="bi bi-facebook"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</nav>

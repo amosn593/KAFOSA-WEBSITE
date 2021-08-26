@@ -28,6 +28,21 @@ body {
   position: absolute;
 }
 
+.advert {
+  background-color: red;
+  color: #fff;
+  margin-bottom: -5px;
+}
+
+.advert-h5 {
+  color: #fff;
+}
+
+.advert-h5 a {
+  color: #1d50a4;
+  text-decoration: none;
+}
+
 .mylogo {
   width: 170px;
   height: 120px;
@@ -50,6 +65,16 @@ body {
   font-size: 17px !important;
   font-weight: 700px !important;
   color: #fff !important;
+}
+
+.top-icons {
+  color: #fff !important;
+}
+
+.top-icons:hover {
+  cursor: pointer;
+  transition: 0.9s;
+  transform: rotate(360deg);
 }
 
 .mysidebar {
@@ -129,6 +154,10 @@ li {
 .mymap {
   width: 400px;
   height: 350px;
+}
+
+.profiles_img {
+  width: 100%;
 }
 
 /* Media queries */
