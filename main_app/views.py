@@ -24,6 +24,9 @@ def memmberlist(request):
     return render(request, "main_app/members/members.html")
 
 
+def gallery(request):
+    return render(request, "main_app/gallery/gallery.html")
+
 def contact_us(request):
     return render(request, "main_app/contact/contact.html")
 
