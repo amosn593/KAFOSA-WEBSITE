@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, membership, application, memmberlist, contact_us, objectives, kafosa, turtlebay, contact_form, gallery
+from .views import index, membership, application, memmberlist, contact_us, objectives, kafosa, turtlebay, finsco, gallery
 
 urlpatterns = [
     path('', index, name="home"),
@@ -11,5 +11,5 @@ urlpatterns = [
     path('kafosa-objectives', objectives, name="objectives"),
     path('cafosa_launch', kafosa, name="kafosa"),
     path('kafosa-workshop-15-18-21', turtlebay, name="turtlebay"),
-    path('workshop_register', contact_form, name="register"),
+    path('kafosa-partners-with-finsco-africa', finsco, name="finsco"),
 ]

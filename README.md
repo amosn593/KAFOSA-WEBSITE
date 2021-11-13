@@ -8,4 +8,4 @@ Used Django
 
 ###
 
-[Website](https://kafosa.or.ke/)
+[View Website](https://kafosa.or.ke/)

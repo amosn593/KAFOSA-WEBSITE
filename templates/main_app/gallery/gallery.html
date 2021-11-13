@@ -1,7 +1,103 @@
 {% extends 'main_app/base.html' %} {% load static %} {% block content %}
 <div class="container">
-  <h4 class="text-center heading">Our Gallery</h4>
-  <div class="row">
+  <h4 class="text-center heading my-3">Our Gallery</h4>
+  <div class="row mt-2">
+    <div class="col-md-6">
+      <div class="card">
+        <img
+          src="{% static 'main_app/images/gallery/kafosa-finsco-4.jpg' %}"
+          class="card-img-top gallery-photo"
+          alt="chairman-photo"
+        />
+        <div class="card-body">
+          <p class="card-text gallary-text">
+            KAFOSA Representative with Finsco Africa Leaders, During an event in
+            Nairobi, October, 2021.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <img
+          src="{% static 'main_app/images/gallery/kafosa-chair-finsco.jpg' %}"
+          class="card-img-top gallery-photo w-75"
+          alt="Kafosa and Yelbridges mou"
+        />
+        <div class="card-body">
+          <p class="card-text gallary-text">
+            Chairperson KAFOSA, During Finsco Event held in Nairobi, October,
+            2021.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-md-6">
+      <div class="card">
+        <img
+          src="{% static 'main_app/images/gallery/kafosa-finsco-1.jpg' %}"
+          class="card-img-top gallery-photo"
+          alt="chairman-photo"
+        />
+        <div class="card-body">
+          <p class="card-text gallary-text">
+            KAFOSA Representative with Finsco Africa Leaders, During an event in
+            Nairobi, October, 2021.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <img
+          src="{% static 'main_app/images/gallery/ceo-tabasuri-2.jpg' %}"
+          class="card-img-top gallery-photo w-75"
+          alt="Kafosa and Yelbridges mou"
+        />
+        <div class="card-body">
+          <p class="card-text gallary-text">
+            CEO, Tabasuri Sacco, During Finsco Event held in Nairobi, October,
+            2021.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-md-6">
+      <div class="card">
+        <img
+          src="{% static 'main_app/images/gallery/ceo-tabasuri-1.jpg' %}"
+          class="card-img-top gallery-photo w-75"
+          alt="chairman-photo"
+        />
+        <div class="card-body">
+          <p class="card-text gallary-text">
+            CEO, Tabasuri Sacco, During Finsco Event held in Nairobi, October,
+            2021.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <img
+          src="{% static 'main_app/images/gallery/kafosa-finsco-2.jpg' %}"
+          class="card-img-top gallery-photo"
+          alt="Kafosa and Yelbridges mou"
+        />
+        <div class="card-body">
+          <p class="card-text gallary-text">
+            KAFOSA Representative with Finsco Africa Leaders, During an event in
+            Nairobi, October, 2021.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-2">
     <div class="col-md-6">
       <div class="card">
         <img
@@ -64,7 +160,7 @@
       </div>
     </div>
   </div>
-  <div class="row mt-2">
+  <!-- <div class="row mt-2">
     <div class="col-md-6">
       <div class="card">
         <img
@@ -92,6 +188,6 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 {% endblock content %}
