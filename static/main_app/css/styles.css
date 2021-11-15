@@ -59,6 +59,7 @@ body {
 
 .navhover:hover {
   background-color: #27aae1 !important;
+  border-radius: 8px !important;
 }
 
 .nav-link {
