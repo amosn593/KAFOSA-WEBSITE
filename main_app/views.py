@@ -53,6 +53,7 @@ def contact_us(request):
         email = request.POST["email"].strip()
         message = request.POST["message"].strip()
         try:
+            # saving to database
             c = ContactUs(name=name, phone=phone, email=email, message=message)
             c.save()
             return redirect('contact_us')
