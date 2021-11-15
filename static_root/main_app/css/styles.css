@@ -28,13 +28,28 @@ body {
   position: absolute;
 }
 
+.advert {
+  background-color: red;
+  color: #fff;
+  margin-bottom: -5px;
+}
+
+.advert-h5 {
+  color: #fff;
+}
+
+.advert-h5 a {
+  color: #1d50a4;
+  text-decoration: none;
+}
+
 .mylogo {
   width: 170px;
   height: 120px;
 }
 
 .mycarosel {
-  height: 415px !important;
+  height: 530px !important;
 }
 
 .mynavbar {
@@ -50,6 +65,16 @@ body {
   font-size: 17px !important;
   font-weight: 700px !important;
   color: #fff !important;
+}
+
+.top-icons {
+  color: #fff !important;
+  transition: 0.6s;
+}
+
+.top-icons:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .mysidebar {
@@ -122,11 +147,29 @@ li {
 
 .fosa {
   font-family: "Barlow", sans-serif;
+  /* color: #ffff01; */
+  font-weight: 700;
 }
 
 .mymap {
   width: 400px;
   height: 350px;
+}
+
+.profiles_img {
+  width: 100%;
+}
+
+.gallery-photo {
+  height: 280px !important;
+}
+
+.gallary-text {
+  height: 75px !important;
+  overflow: auto;
+  padding: 5px !important;
+  margin: 0px !important;
+  font-size: 14px !important;
 }
 
 /* Media queries */

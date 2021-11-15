@@ -1,6 +1,6 @@
 {% extends 'main_app/base.html' %} {% load static %} {% block content %}
 <div class="container">
-  <h4 class="text-center">CONTACTS</h4>
+  <h4 class="text-center">CONTACTS US</h4>
   <div class="row">
     <div class="col-md-6 mt-3">
       <iframe
@@ -22,42 +22,46 @@
   </div>
 
   <div class="row mt-4">
-    <div class="col-md-4">
-      <h6>Chairman</h6>
-      <img
-        src="{% static 'main_app/images/chairman.jpeg' %}"
-        alt="chairman photo"
-        class="profiles_img"
-      />
-      <p>Mr. Isedorius Ochola Agola</p>
-      <p>Tel: 254-733852356</p>
-      <p>isedorius.agola@kafosa.or.ke, iagolla@kmfri.go.ke</p>
-    </div>
-    <div class="col-md-4 text-center">
-      <h6>Vice Chairman</h6>
-      <p>Mr. Alfred Mlolwa</p>
-      <p>0735524540</p>
-    </div>
-    <div class="col-md-4 text-center">
-      <h6>Secretary</h6>
-      <p>Mr. George Olango</p>
-      <p>0723520407</p>
-      <p>golango@kpa.co.ke</p>
-    </div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-md-4">
-      <h6>Treasurer</h6>
-      <p>Mr. David Mwapage</p>
-      <p>mwanyota@yahoo.com</p>
-    </div>
-    <div class="col-md-4">
-      <h6>Asstistant Secretary</h6>
-      <p>Mr. Mwatsefu Momahed</p>
-    </div>
-    <div class="col-md-4">
-      <h6>Asstistant Treasurer</h6>
-      <p>Mr. Wahab Hassan</p>
+    <div class="col-md-12 my-2">
+      <h4 class="text-center my-2 py-2">Contact Us Form</h4>
+      <form method="post" action="{% url 'contact_us' %}">
+        {% csrf_token %}
+        <div class="row g-4 align-items-center">
+          <div class="col-auto">
+            <label class="col-form-label">Full Name</label>
+          </div>
+          <div class="col-auto">
+            <input type="text" class="form-control" name="name" required />
+          </div>
+          <div class="col-auto">
+            <label class="col-form-label">Phone</label>
+          </div>
+          <div class="col-auto">
+            <input type="number" class="form-control" name="phone" required />
+          </div>
+        </div>
+        <div class="mb-3 mt-3">
+          <label class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" required />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            name="message"
+            rows="3"
+            name="message"
+            required
+          ></textarea>
+        </div>
+        <div class="my-3 py-3 text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
