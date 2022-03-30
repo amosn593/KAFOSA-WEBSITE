@@ -10,7 +10,7 @@ from .models import TurtleBay, ContactUs
 
 def index(request):
     if request.method == "GET":
-        return render(request, "main_app/home.html")
+        return render(request, "main_app/index/index.html")
     else:
         return HttpResponse("INVALID HTTP METHOD")
 
@@ -70,16 +70,23 @@ def objectives(request):
         return HttpResponse("INVALID HTTP METHOD")
 
 
-def kafosa(request):
+def kafosa_lauch(request):
     if request.method == "GET":
-        return render(request, "main_app/news/cafosa.html")
+        return render(request, "main_app/news/cafosa_launch.html")
     else:
         return HttpResponse("INVALID HTTP METHOD")
 
 
-def turtlebay(request):
+def workshop_2022(request):
     if request.method == "GET":
-        return render(request, "main_app/news/turtlebay.html")
+        return render(request, "main_app/news/workshop_2022.html")
+    else:
+        return HttpResponse("INVALID HTTP METHOD")
+
+
+def workshop_2021(request):
+    if request.method == "GET":
+        return render(request, "main_app/news/workshop_2021.html")
     else:
         return HttpResponse("INVALID HTTP METHOD")
 
