@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, membership, application, memmberlist, contact_us, objectives, kafosa, turtlebay, finsco, gallery
+from .views import *
 
 urlpatterns = [
     path('', index, name="home"),

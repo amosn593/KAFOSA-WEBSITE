@@ -1,9 +1,9 @@
-from django.core.mail import send_mail, EmailMultiAlternatives
-from django.template.loader import render_to_string
-from django.http import HttpResponse
-from django.utils.html import strip_tags
-from kafosa.settings import EMAIL_HOST_USER
 from django.shortcuts import render, redirect
+# from django.core.mail import send_mail, EmailMultiAlternatives
+# from django.template.loader import render_to_string
+from django.http import HttpResponse
+# from django.utils.html import strip_tags
+# from kafosa.settings import EMAIL_HOST_USER
 from django.contrib import messages
 from .models import TurtleBay, ContactUs
 
